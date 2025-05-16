@@ -121,7 +121,7 @@ body {
 
 /* --- TÍTULOS --- */
 h1, h2, h3 {
-  font-family: 'Uncial Antiqua', cursive;
+  font-family: 'Spectral', serif;
   color: #2a1e12;
   margin-bottom: 1rem;
 }
@@ -147,7 +147,7 @@ h1 {
 }
 
 #story-title {
-  font-family: 'Uncial Antiqua', cursive;
+  font-family: 'Spectral', serif;
   font-size: 2rem;
 }
 
@@ -565,50 +565,36 @@ ul#menu-core, #menu ul li {
 
 	l10nStrings.shareTitle = 'Compartilhar';
 })();
-</script><tw-tag name="lago" color="blue"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="650,375" size="100,100">Você acorda com o som de água batendo suavemente contra a madeira. Está em um pequeno barco à deriva, envolto por névoa espessa. À sua frente, uma ilhota solitária surge no meio do lago, como um segredo esquecido pelo tempo.
+</script><tw-tag name="lago" color="blue"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="650,375" size="100,100">Você acorda com o som de água batendo contra a madeira do seu pequeno barco à deriva, envolto pela névoa espessa. À sua frente, uma ilha solitária surge no meio do lago, como um segredo esquecido pelo tempo.
 
-Ao atracar, sente o ar frio como se algo invisível o atravessasse.
+Ao atracar, você sente o ar frio como se algo invisível o atravessasse.
 
-[[Você se aproxima do centro da ilha|Centro da Ilhota]]
+Dane-se o que os aldeões disseram. [[Você decide explorar a ilha|Centro da Ilhota]].
 
-&lt;&lt;set $encontrou_chave=false&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Centro da Ilhota" tags="lago" position="775,600" size="100,100">No centro da ilhota, envolta por cipós e cercada por carvalhos retorcidos, uma figura translúcida paira acima do solo. Seu rosto é pálido, seus olhos tristes.
+&lt;&lt;set $encontrou_chave=false&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Centro da Ilhota" tags="lago" position="775,600" size="100,100">No centro da ilha, entre cipós e carvalhos retorcidos, uma figura translúcida paira acima do solo. Seu rosto é pálido, seus olhos tristes.
 
-“Você pode me ver... finalmente,” murmura o &#39;&#39;fantasma&#39;&#39;. “Estive preso aqui por séculos. Alguém escondeu a chave da minha liberdade. Ela está naquela velha casa...”
+“Você pode me ver... finalmente,” murmura o &#39;&#39;fantasma&#39;&#39;. “Estive preso aqui por séculos. Alguém escondeu a chave da minha liberdade. Ela está naquela velha casa...” Ele aponta para o outro lado da ilha, onde os restos de uma construção abandonada mal se sustentam. “Por favor, encontre-a. Jogue-a nas águas do lago. Nelas se encontra o portal para a minha liberdade...”
 
-Ele aponta para o outro lado da ilha, onde os restos de uma construção abandonada mal se sustentam.
-
-“Por favor, encontre-a. Jogue-a nas águas do lago. Nelas se encontra o portal para a minha liberdade...”
-
-[[Vá até a casa em ruínas|Casa em Ruínas]]</tw-passagedata><tw-passagedata pid="3" name="Casa em Ruínas" tags="" position="950,550" size="100,100">A casa parece prestes a desabar. Pássaros silenciosos observam dos beirais partidos. As paredes, cobertas de musgo e trepadeiras, ainda guardam memórias de um passado sombrio.
+Você não o conhece. Mas algo no tom da voz faz você sentir a solidão, o cansaço... [[Você decide ir à casa em ruínas|Casa em Ruínas]] e ver o que pode fazer.</tw-passagedata><tw-passagedata pid="3" name="Casa em Ruínas" tags="" position="950,550" size="100,100">A casa parece prestes a desabar. Pássaros silenciosos observam dos beirais partidos. As paredes, cobertas de musgo e trepadeiras, ainda guardam memórias de um passado sombrio.
 
 Há entulho espalhado por todo lado. Um velho piano sem cordas repousa num canto, e um armário tombado bloqueia parcialmente uma porta.
 
-Você pode &lt;&lt;if $encontrou_chave&gt;&gt;[[voltar para o lago|Lago]]&lt;&lt;else&gt;&gt;[[revistar o piano|Revistar o piano]], [[tentar mover o armário|Mover o armário]] ou [[vasculhar entre os escombros|Vasculhar entre os escombros]]&lt;&lt;/if&gt;&gt;.</tw-passagedata><tw-passagedata pid="4" name="Revistar o piano" tags="" position="950,725" size="100,100">Você abre a tampa do piano. Dentro, há apenas folhas secas e o esqueleto de um pequeno pássaro. Nada de útil.
+&lt;&lt;if $encontrou_chave&gt;&gt;Você está com a chave. É melhor [[voltar para o lago|Lago]]&lt;&lt;else&gt;&gt;Você pode [[revistar o piano|Revistar o piano]], [[tentar mover o armário|Mover o armário]] ou [[vasculhar entre os escombros|Vasculhar entre os escombros]]&lt;&lt;/if&gt;&gt;.</tw-passagedata><tw-passagedata pid="4" name="Revistar o piano" tags="" position="950,725" size="100,100">Você abre a tampa do piano. Dentro, há apenas folhas secas e o esqueleto de um pequeno pássaro. Nada de útil. [[É melhor continuar procurando.|Casa em Ruínas]]</tw-passagedata><tw-passagedata pid="5" name="Vasculhar entre os escombros" tags="" position="1175,700" size="100,100">Você revira pedaços de madeira e cacos de vidro, até que algo metálico reluz entre os detritos: &#39;&#39;uma chave antiga&#39;&#39;, com um cabo decorado por serpentes entrelaçadas.
 
-[[Voltar|Casa em Ruínas]]</tw-passagedata><tw-passagedata pid="5" name="Vasculhar entre os escombros" tags="" position="1175,700" size="100,100">Você revira pedaços de madeira e cacos de vidro, até que algo metálico reluz entre os detritos: &#39;&#39;uma chave antiga&#39;&#39;, com um cabo decorado por serpentes entrelaçadas.
-
-Você a pega. &#39;&#39;Ao tocá-la, ouve um sussurro ao seu redor, como se a própria ilha respirasse.&#39;&#39;
-
-[[Voltar|Casa em Ruínas]]
+Ao tocá-la, &#39;&#39;você ouve um sussurro ao seu redor, como se a própria ilha respirasse.&#39;&#39; [[Essa deve ser a chave de que o fantasma falou.|Casa em Ruínas]]
 
 &lt;&lt;set $encontrou_chave=true&gt;&gt;
-</tw-passagedata><tw-passagedata pid="6" name="Mover o armário" tags="" position="1250,550" size="100,100">Com esforço, você empurra o armário, revelando uma porta para o porão. Está escuro lá dentro.
+</tw-passagedata><tw-passagedata pid="6" name="Mover o armário" tags="" position="1250,550" size="100,100">Com esforço, você empurra o armário, revelando uma porta para o porão. Está escuro lá dentro. Mesmo assim, você acende seu isqueiro e [[decide descer para continuar procurando.|Porão Escuro]]</tw-passagedata><tw-passagedata pid="7" name="Porão Escuro" tags="" position="1500,425" size="100,100">Você desce os degraus velhos e barulhentos. O cheiro de mofo e terra úmida domina o ambiente. Em um canto, há inscrições nas pedras — algo como um selo arcano, mas é impossível saber com certeza.
 
-[[Desça ao porão|Porão Escuro]]</tw-passagedata><tw-passagedata pid="7" name="Porão Escuro" tags="" position="1500,425" size="100,100">Você acende seu isqueiro e desce os degraus rangentes. O cheiro de mofo e terra úmida domina o ambiente. Em um canto, há inscrições nas pedras — algo como um selo arcano.
+Sejá lá o que for, uma coisa é certa: não há chave nenhuma aqui. 
 
-Mas não há chave aqui. 
+No entanto, ao começar a voltar pelos degraus, você ouve uma voz — talvez apenas um eco distante — que parece dizer: &#39;&#39;“Você já a encontrou... Dê atenção aos escombros...”&#39;&#39;
 
-No entanto, ao voltar-se para subir de volta pelos degraus, você ouve uma voz — talvez apenas um eco distante — que parece dizer: &#39;&#39;“Você já a encontrou... Dê atenção aos escombros...”&#39;&#39;
-
-[[Subir|Casa em Ruínas]]</tw-passagedata><tw-passagedata pid="8" name="Lago" tags="lago" position="1375,175" size="100,100">Você retorna ao barco, com a chave na mão. A névoa se ergue, e o lago parece brilhar de maneira estranha sob a luz fraca do céu nublado.
-
-O fantasma aparece à margem, observando.
+[[Esperançoso, você termina de subir os degraus.|Casa em Ruínas]]</tw-passagedata><tw-passagedata pid="8" name="Lago" tags="lago" position="1375,175" size="100,100">Você retorna com a chave na mão. A névoa se ergue, e o lago parece brilhar de maneira estranha sob a luz fraca do céu nublado. O fantasma aparece à margem, observando.
 
 “Agora,” ele sussurra. “Jogue-a. Que as correntes me levem.”
 
-Você sente o peso da decisão.
-
-Você pode [[jogar a chave no lago|Libertação]] ou [[pegar a chave para si mesmo|Manter o fantasma preso]].</tw-passagedata><tw-passagedata pid="9" name="Libertação" tags="" position="1175,50" size="100,100">Você arremessa a chave na água. Assim que ela toca a superfície, círculos concêntricos se espalham como portais se abrindo.
+No entanto, algo faz com que você hesite. A coisa certa parece ser [[jogar a chave no lago|Libertação]] e libertar essa alma. Ao mesmo tempo, a chave começa a parecer tão rara, tão preciosa... não seria melhor [[pegá-la para si mesmo|Manter o fantasma preso]]? Talvez ela possa levá-lo a algum tesouro perdido...</tw-passagedata><tw-passagedata pid="9" name="Libertação" tags="" position="1175,50" size="100,100">Você arremessa a chave na água. Assim que ela toca a superfície, círculos concêntricos se espalham como portais se abrindo.
 
 O fantasma sorri — pela primeira vez.
 
@@ -620,17 +606,13 @@ Ele começa a se dissipar em partículas de luz, e a névoa desaparece com ele. 
 
 &#39;&#39;Fim.&#39;&#39;
 
-[[Jogar novamente?|Start]]</tw-passagedata><tw-passagedata pid="10" name="Manter o fantasma preso" tags="" position="1150,200" size="100,100">Você hesita. A chave parece preciosa, antiga... talvez valiosa.
+[[Quer jogar novamente?|Start]]</tw-passagedata><tw-passagedata pid="10" name="Manter o fantasma preso" tags="" position="1150,200" size="100,100">Lentamente, você coloca a chave no bolso de seu casaco. O fantasma franze o semblante. “Então será assim... Continuarei esperando aqui, até que alguém me liberte... Mas cedo ou tarde, essa chave irá voltar para mim...&quot; O céu escurece. A névoa se adensa novamente, enquanto a aparição se desfaz diante dos seus olhos.
 
-O fantasma franze o semblante. “Então continuarei aqui. Esperando... mais séculos, talvez.”
-
-O céu escurece. A névoa se adensa novamente.
-
-&#39;&#39;Você escolheu condenar uma alma a novos séculos de solidão.&#39;&#39;
+&#39;&#39;Você escolheu condenar uma alma a continuar aprisionada.&#39;&#39; //Quem sabe o que isso acabará fazendo com você?//
 
 &#39;&#39;Fim.&#39;&#39;
 
-[[Tentar outra escolha?|Start]]</tw-passagedata><tw-passagedata pid="11" name="StoryInit" tags="" position="200,75" size="100,100">&lt;&lt;script&gt;&gt;
+[[Quer tentar outra vez?|Start]]</tw-passagedata><tw-passagedata pid="11" name="StoryInit" tags="" position="200,75" size="100,100">&lt;&lt;script&gt;&gt;
 var link = document.createElement(&quot;link&quot;);
 link.rel = &quot;stylesheet&quot;;
 link.href = &quot;https://fonts.googleapis.com/css2?family=EB+Garamond&amp;family=Uncial+Antiqua&amp;display=swap&quot;;
